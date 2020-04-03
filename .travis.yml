@@ -6,7 +6,6 @@ sudo: enabled
 services:
   - mysql
 before_install:
-  - sudo mysql -e 'CREATE DATABASE bugsdb;'
+  - sudo mysql -e 'CREATE DATABASE lab4;'
   - sudo mysql < "bug.sql"
 script: mvn clean verify
-
