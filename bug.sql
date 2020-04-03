@@ -25,6 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `bug`
 --
+USE lab4;
 
 CREATE TABLE `bug` (
   `id` int(11) NOT NULL,
