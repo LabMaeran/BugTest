@@ -1,7 +1,12 @@
-dist: xenial
 language: java
 jdk:
   - openjdk8
   - openjdk11
-script:
-  - ./mvnw clean install
+sudo: enabled
+services:
+  - mysql
+before_install:
+  - sudo mysql -e 'CREATE DATABASE bugsdb;'
+  - sudo mysql < "db.sql"
+script: mvn clean verify
+
