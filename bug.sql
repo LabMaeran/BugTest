@@ -74,10 +74,10 @@ ALTER TABLE `bug`
 --
 -- Constraints for table `bug`
 --
-ALTER TABLE `bug`
-  ADD CONSTRAINT `bug_ibfk_1` FOREIGN KEY (`id_product`) REFERENCES `product` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `bug_ibfk_2` FOREIGN KEY (`id_resolver`) REFERENCES `employee` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `bug_ibfk_3` FOREIGN KEY (`id_author`) REFERENCES `employee` (`id`) ON DELETE CASCADE;
+--ALTER TABLE `bug`
+--  ADD CONSTRAINT `bug_ibfk_1` FOREIGN KEY (`id_product`) REFERENCES `product` (`id`) ON DELETE CASCADE,
+--  ADD CONSTRAINT `bug_ibfk_2` FOREIGN KEY (`id_resolver`) REFERENCES `employee` (`id`) ON DELETE CASCADE,==
+--  ADD CONSTRAINT `bug_ibfk_3` FOREIGN KEY (`id_author`) REFERENCES `employee` (`id`) ON DELETE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
